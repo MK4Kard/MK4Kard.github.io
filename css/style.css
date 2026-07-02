@@ -1,0 +1,299 @@
+/* ---------- Общие стили ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f6f0;
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Шапка ---------- */
+.main-header {
+    background: #1a1a1a;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #f5b700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f5b700;
+    letter-spacing: 0.5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.25s, color 0.25s;
+}
+
+.main-nav a:hover {
+    color: #f5b700;
+    border-bottom-color: #f5b700;
+}
+
+/* ---------- Заголовки (центрирование) ---------- */
+.container h1,
+.container h2,
+.container h3,
+.container .subhead {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+}
+
+.subhead {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #f5b700;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #f5b700;
+    /* display: inline-block; убрано – теперь полоса на всю ширину */
+    display: block;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+/* ---------- Текст и списки ---------- */
+p {
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+ul {
+    margin: 8px 0 16px 24px;
+}
+
+li {
+    margin-bottom: 6px;
+    color: #1a1a1a;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+/* ---------- Заглушки для фото ---------- */
+.photo-placeholder {
+    display: inline-block;
+    background: #f2efe8;
+    border: 2px dashed #c0b7a8;
+    border-radius: 12px;
+    padding: 12px 22px;
+    margin: 6px 0 12px 0;
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    transition: 0.2s;
+}
+
+.photo-placeholder:hover {
+    background: #e8e0d5;
+    border-color: #f5b700;
+}
+
+/* ---------- Блоки компетенций ---------- */
+.comp-block {
+    background: #faf8f4;
+    border-left: 5px solid #f5b700;
+    padding: 14px 22px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+.comp-block h4 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.comp-block ul {
+    margin-top: 4px;
+}
+
+/* ---------- Достижения ---------- */
+.achievement-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 30px;
+    margin: 12px 0 8px 0;
+    justify-content: center; /* центрируем бейджи достижений */
+}
+
+.achievement-item {
+    background: #f5b700;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #1a1a1a;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Карточки проектов ---------- */
+.project-card {
+    background: #faf8f4;
+    border-radius: 14px;
+    padding: 18px 24px;
+    margin: 16px 0;
+    border: 1px solid #e6e0d6;
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    border-color: #f5b700;
+    box-shadow: 0 4px 12px rgba(245, 183, 0, 0.15);
+}
+
+.project-card h4 {
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.project-card p {
+    margin-bottom: 4px;
+}
+
+/* ---------- Подвал ---------- */
+.main-footer {
+    background: #1a1a1a;
+    border-top: 3px solid #f5b700;
+    padding: 24px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.25s;
+}
+
+.footer-socials a:hover {
+    color: #f5b700;
+}
+
+/* ---------- Адаптивность ---------- */
+@media (max-width: 700px) {
+    .container {
+        padding: 24px 20px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    .main-nav a {
+        font-size: 0.85rem;
+    }
+
+    .achievement-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photo-placeholder {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
